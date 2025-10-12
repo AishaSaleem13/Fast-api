@@ -14,9 +14,9 @@
     }
   ],
   "env": {
-    "MONGO_URL": "@mongo_url",
-    "DB_NAME": "@db_name",
-    "SECRET_KEY": "@secret_key",
+    "MONGO_URL": "mongodb+srv://aishasaleem13:zarahkhan123@cluster0.xy76fuz.mongodb.net/",
+    "DB_NAME": "fastapi_ecommerce",
+    "SECRET_KEY": "supersecretkey1234567890",
     "ALGORITHM": "HS256",
     "ACCESS_TOKEN_EXPIRE_MINUTES": "60"
   }
