@@ -1,17 +1,10 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "app/main.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "50mb" }
-    }
+    { "src": "app/main.py", "use": "@vercel/python" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app/main.py"
-    }
+    { "src": "/(.*)", "dest": "app/main.py" }
   ],
   "env": {
     "MONGO_URL": "mongodb+srv://aishasaleem13:zarahkhan123@cluster0.xy76fuz.mongodb.net/",
