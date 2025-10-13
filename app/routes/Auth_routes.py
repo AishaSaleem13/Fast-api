@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, status, Depends
-from ..schemas.user_schema import UserRegister, UserLogin
-from ..models.user_model import user_collection
-from ..utils.hash_password import hash_password, verify_password
-from ..utils.jwt_handler import create_access_token
+from app.schemas.user_schema import UserRegister, UserLogin
+from app.models.user_model import user_collection
+from app.utils.hash_password import hash_password, verify_password
+from app.utils.jwt_handler import create_access_token
 from bson import ObjectId
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
